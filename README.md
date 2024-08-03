@@ -14,7 +14,7 @@ from ds import Bot, Interaction
 
 bots = Bot("user-token")
 
-@bot.event(user_id=1234567890, event="message_new")
+@bots.event(user_id=1234567890, event="message_new")
 async def hello_world(inter: Interaction):
     print(inter.message.content)
 
